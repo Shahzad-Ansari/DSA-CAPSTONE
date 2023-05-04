@@ -663,10 +663,9 @@ cm,avgScores, best_scores ,best_model, y_test_binarized_best, y_score_best = run
 
 Scores = {
     'Metric': ['Accuracy', 'Precision', 'Recall', 'F1 score', 'AUC-ROC', 'Specificity', 'Balanced Accuracy'],
-    'Average': [average_accuracy, average_precision, average_recall, average_f1, average_auc_roc, average_specificity, average_balance],
-    'Best': [best_accuracy, best_precision, best_recall, best_f1, best_auc_roc, best_specificity, best_balance],
+    'Average': [avgScores[0], avgScores[1], avgScores[2], avgScores[3], avgScores[4], avgScores[5], avgScores[6]],
+    'Best': [best_scores[0], best_scores[1], best_scores[2], best_scores[3], best_scores[4], best_scores[5], best_scores[6]],
 }
-
 
 bestVisualization = displayAUC(y_test_binarized_best,y_score_best,class_names,title = 'Best model')
 
@@ -843,8 +842,8 @@ cm, avgScores, best_scores, best_model, y_test_binarized_best, y_score_best = ru
 
 Scores = {
     'Metric': ['Accuracy', 'Precision', 'Recall', 'F1 score', 'AUC-ROC', 'Specificity', 'Balanced Accuracy'],
-    'Average': [average_accuracy, average_precision, average_recall, average_f1, average_auc_roc, average_specificity, average_balance],
-    'Best': [best_accuracy, best_precision, best_recall, best_f1, best_auc_roc, best_specificity, best_balance],
+    'Average': [avgScores[0], avgScores[1], avgScores[2], avgScores[3], avgScores[4], avgScores[5], avgScores[6]],
+    'Best': [best_scores[0], best_scores[1], best_scores[2], best_scores[3], best_scores[4], best_scores[5], best_scores[6]],
 }
 
 
